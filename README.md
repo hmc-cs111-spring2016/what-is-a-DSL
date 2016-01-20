@@ -1,7 +1,7 @@
 [Assignment HOWTO]: https://github.com/hmc-cs111-spring2016/hmc-cs111-spring2016.github.io/wiki/Assignment-HOWTO
 [Fowler]: https://sakai.claremont.edu/access/content/group/CX_mtg_91370/Fowler%20Chapter%202.pdf
 [markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-[Pulls]: https://www.github.com
+[Pulls]: https://github.com/hmc-cs111-spring2016/what-is-a-DSL/pulls
 
 # What _is_ a DSL?
 ###### _Submission deadline: Sunday, Jan. 24 at 11:59pm_
@@ -116,6 +116,23 @@ try to answer it!
 - Did you learn any cool language features (from ContextFree or Markdown) that
 might add to your partner's work?
 
+## Grading
+Good responses (i.e., responses that receive a 3) will:
+
+   + fully respond to every prompt in the starter file, _and_
+   + be well-written and easy to read, i.e., clear yet concise using good 
+   spelling, grammar, organization, and proper formatting, to convey a 
+   well-formed idea, _and_
+   + where appropriate, support your thoughts with references to material from
+   the reading or from language documentation.
+
+Great responses (i.e., responses that receive a 4) will additionally:
+
+   + be particularly insightful, by using concepts from the reading to classify
+   aspects of each DSL in the assignment and / or by disagreeing with the
+   classification that Fowler might make and by presenting a strong argument for
+   a different classification.
+
 ## Tasks
 
 - [ ] Read the [Assignment HOWTO]
@@ -123,7 +140,7 @@ might add to your partner's work?
 - [ ] Find a DSL
 - [ ] Describe your DSL's implementation and semantics in `my-dsl.md`
 - [ ] Write a ContextFree program in `firstname_lastname.cfdg`
-- [ ] Make and save a pretty picture in `firstname_lastname_variant.png`
+- [ ] Make and save a nice picture in `firstname_lastname_variant.png`
 - [ ] Answer the questions in `context-free.md`
 - [ ] Submit your work
 - [ ] Comment on your critique partner's work
