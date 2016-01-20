@@ -8,9 +8,9 @@ _Describe the language's domain in five words._
 
 
 # Computational model
-_What is the underlying "computational model" of this language? To answer this 
-question, provide a high-level description (no more than 100 words) of what 
-happens when a program runs._
+_We don't yet have a great definition of the term "computational model". 
+For now, try to come up with the clearest, most concise explanation of 
+what happens when a ContextFree program runs._
 
 
 # DSL-ness
