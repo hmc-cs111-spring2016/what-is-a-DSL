@@ -1,4 +1,4 @@
-[Assignment HOWTO]: https://github.com/hmc-cs111-fall2016/hmc-cs111-fall2016.github.io/wiki/Assignment-HOWTO
+[Assignment HOWTO]: https://github.com/hmc-cs111-spring2016/hmc-cs111-spring2016.github.io/wiki/Assignment-HOWTO
 [Fowler]: https://sakai.claremont.edu/access/content/group/CX_mtg_91370/Fowler%20Chapter%202.pdf
 [markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [Pulls]: https://www.github.com
