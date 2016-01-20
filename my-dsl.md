@@ -8,9 +8,9 @@ _Describe the language's domain in five words._
 
 
 # Computational model
-_What is the underlying computational model of this language? To answer this 
-question, provide a high-level description (no more than 100 words) of the 
-computation that occurs when someone executes a program in this language._
+_What is the underlying "computational model" of this language? To answer this 
+question, provide a high-level description (no more than 100 words) of what 
+happens when a program runs._
 
 
 # DSL-ness
