@@ -1,0 +1,47 @@
+startshape TEST
+
+background { b -1}
+size {s 60 60}
+
+rule TEST {
+	SKY {h 170 b 0.8 sat 1}
+	TREE{s 3 y -8 h 30 b 0.5 sat 1}
+	20 * {r 18} TREE{y 20 h 30 b -1 sat 1}
+}
+
+rule SKY {
+	HALFSKY{y 1}
+	HALFSKY{flip 0 y -1}
+}
+
+rule HALFSKY {
+	30*{y 1 h 1 sat -0.1} SQUARE {y -30 z -2 s 60 1 h 50 } 
+}
+
+rule TREE {
+	BRANCH {}
+	STEM {s 0.7}
+	TREE { y 1 s 0.8 h 5 b -0.1}
+}
+
+rule STEM {
+	TRIANGLE{y 0.6 s 0.17 10}
+	ROOT{y -1.65}
+	ROOT{ flip 0 r 180 y -1.65}
+}
+
+rule ROOT {
+	CIRCLE {s 0.19}
+	ROOT { y -0.12 r -3 s 0.985}
+}
+
+rule BRANCH {
+	LEAF {x -0.5}
+	LEAF {r 180 flip 0 x 0.5}
+	BRANCH{s 0.85 y 1.2 h 6}
+}
+
+rule LEAF {
+	CIRCLE {s -.5 0.6 r 40 h 110}
+	LEAF {x -0.1 r -1 s 0.975}
+}
