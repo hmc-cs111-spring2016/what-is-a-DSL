@@ -6,7 +6,7 @@ The programming language is for people that want to be able to create digital ar
 
 ## What is easy to do in this language? Why is it easy?
 
-It is easy to produce simple shapes in the language because it includes '''CIRCLE''' and '''SQUARE''' keywords. In order to produce a simple unit circle, the user only needs to write one rule and does not need to specify any adjustments to the shape. Similarly, it is easy to color the background and size the canvas because of the supported methods in ContextFree. The language makes it intuitive to reposition elements with use of '''x''' and '''y''' transformations.
+It is easy to produce simple shapes in the language because it includes `CIRCLE` and `SQUARE` keywords. In order to produce a simple unit circle, the user only needs to write one rule and does not need to specify any adjustments to the shape. Similarly, it is easy to color the background and size the canvas because of the supported methods in ContextFree. The language makes it intuitive to reposition elements with use of `x` and `y` transformations.
 
 ## What is hard to do in this language? Why is it hard?
 
@@ -23,8 +23,8 @@ _We don't yet have a great definition of the term "computational model".
 For now, try to come up with the clearest, most concise explanation of what 
 happens when a ContextFree program runs._
 
-When a ContextFree program runs, all of the code is parsed in the context of the grammar. From my limited knowledge of DSLs, it seems as though the implementation code would specify the rendering for CIRCLE and SQUARE objects. ContextFree is written in C++, so it seems as though this rendering would use the graphics libraries of that language. Since the two aforementioned shapes are the only terminals in ContextFree, running a program would involve parsing all of the rules in the DSL in terms of these terminals. The program would then be run through the rendering specifications of the DSL and the visual output is produced. 
+When a ContextFree program runs, all of the code is parsed in the context of the grammar. From my limited knowledge of DSLs, it seems as though the implementation code would specify the rendering for `CIRCLE` and `SQUARE` objects. ContextFree is written in C++, so it seems as though this rendering would use the graphics libraries of that language. Since the two aforementioned shapes are the only terminals in ContextFree, running a program would involve parsing all of the rules in the DSL in terms of these terminals. The program would then be run through the rendering specifications of the DSL and the visual output is produced. 
 
 ## What do you think is interesting about the ContextFree program you wrote?
 
-In the ContextFree program that I wrote, I tried to experiment with some capabilities of the language, such as rules, loops, and recursion. I also wanted to learn how to control color, especially in the context of loops. The resulting program uses many of these features and ended up looking a bit like the [Cascadia flag](https://en.wikipedia.org/wiki/Doug_flag), which was not my original intention but nonetheless amusing. 
+In the ContextFree program that I wrote, I tried to experiment with some capabilities of the language, such as rules, loops, and recursion. I also wanted to learn how to control color, especially in the context of loops. The resulting program uses many of these features and ended up looking a bit like the [Cascadia flag](https://en.wikipedia.org/wiki/Doug_flag), which was amusing despite not being my original intention. 
