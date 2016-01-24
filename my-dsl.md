@@ -10,7 +10,7 @@ _Describe the language's domain in five words._
 # Computational model
 _We don't yet have a great definition of the term "computational model". 
 For now, try to come up with the clearest, most concise explanation of 
-what happens when a ContextFree program runs._
+what happens when a program in your DSL runs._
 
 
 # DSL-ness
