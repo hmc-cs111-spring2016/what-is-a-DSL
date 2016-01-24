@@ -2,6 +2,8 @@
 _What is the name of the language? Link the name to its webpage 
 (if appropriate)._
 
+The language is [Zillions rule language](http://www.zillions-of-games.com/index.html). 
+
 
 # Domain
 _Describe the language's domain in five words._
