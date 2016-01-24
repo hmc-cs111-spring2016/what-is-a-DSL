@@ -1,0 +1,118 @@
+
+
+startshape MAIN
+
+rule MAIN {
+	WINGS{}
+	WINGS{flip 180 hue 90}
+}
+
+rule WINGS {
+	STARTSQUARE{r 270}
+	#STARTSQUARE{r 270 flip 180 hue 90}
+
+	
+}
+rule STARTSQUARE {
+
+	STARTSQUARE {
+		x 1 size .9 r 6
+		hue 10 sat .2 b .05
+		
+	}
+	UPSQUARECHOOSER {
+	}
+}
+
+rule STARTSQUARE {
+
+	STARTSQUARE {
+		x -1 size .9 r 6
+		hue 10 sat .2 b .05
+		
+	}
+	UPSQUARECHOOSER {
+	}
+}
+
+rule UPSQUARECHOOSER {
+	UPSQUARE1{}
+}
+rule UPSQUARECHOOSER {
+	UPSQUARE2{}
+}
+
+
+rule UPSQUARE1 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE1 {
+		y .9 size .95 r -3
+		hue 15 
+		sat +100
+		b +.1
+	}
+	
+}
+
+rule UPSQUARE1 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE1 {
+		y .9 size .95 r 9
+		hue 165 
+	}
+	
+}
+
+rule UPSQUARE1 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE1 {
+		y .9 size .95 r -6
+		hue 165 
+	}
+	
+}
+
+rule UPSQUARE2 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE2 {
+		y .9 size .95 r 3
+		hue 15 
+		b +2
+		
+		
+	}
+	
+}
+
+rule UPSQUARE2 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE2 {
+		y .9 size .95 r 6
+		hue 15 
+		b +2
+		
+		
+	}
+	
+}
+
+rule UPSQUARE2 {
+	MAINSHAPE {sat .6 b .3}
+	UPSQUARE2 {
+		y .9 size .95 r -9
+		hue 165 
+	}
+	
+}
+
+rule MAINSHAPE 1 {
+	SQUARE[]
+	MAINSHAPE{
+		size .9 hue 18
+		r 10
+	}
+}
+
+rule MAINSHAPE .2 {
+	SQUARE[ hue 180]
+}
