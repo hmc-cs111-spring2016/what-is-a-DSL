@@ -1,0 +1,57 @@
+background { hue 359 sat 1 b -.75 }
+startshape MASK
+
+rule MASK {
+	HALFMASK []
+	HALFMASK [flip 90]
+	MARKINGS [ x 20 y -120 ]
+	EYE [ x -45 y -400 s 1.5 ]
+	EYE [ flip 90 x -45 y -400 s 1.5 ]
+}
+
+path HALFMASK {
+	MOVETO { x 0 y 0 }
+	LINEREL { x -77 y 0 }
+	LINEREL { x -72 y 15 }
+	LINEREL { x -50 y -277 }
+	LINEREL { x -162 y -104 }
+	LINEREL { x -25 y -45 }
+	LINEREL { x 2 y -18 }
+	LINEREL { x 36 y -23 }
+	LINEREL { x 56 y 10 }
+	LINEREL { x 50 y 23 }
+	LINEREL { x 14 y 10 }
+	LINEREL { x 49 y -22 }
+	LINEREL { x 9 y -12 }
+	LINEREL { x 26 y -227 }
+	LINEREL { x 67 y -71 }
+	LINEREL { x 77 y 0 }
+	//CLOSEPOLY {}
+	STROKE { width 10 hue 74 sat 0.15 b .43}
+	FILL { hue 75 sat 0.1 b 0.75 }
+}
+
+path MARKINGS {
+	MOVETO { x 0 y 0 }
+	LINEREL { x 12 y 30 }
+	LINEREL { x -65 y 0 }
+	LINEREL { x 7 y -36 }
+	LINEREL { x 41 y -36 }
+	LINEREL { x 52 y 62 }
+	LINEREL { x 8 y 53 }
+	LINEREL { x -149 y 0 }
+	LINEREL { x 5 y -87 }
+	LINEREL { x 67 y -70 }
+	LINEREL { x 0 y -490 }
+	STROKE { width 15 hue 359 sat 1 b 0.48 }
+}
+
+path EYE {
+	MOVETO { x 0 y 0 }
+	LINEREL { x -68 y 9 }
+	LINEREL { x 12 y -18 }
+	LINEREL { x 40 y -2 }
+	CLOSEPOLY { }
+	STROKE { width 15 hue 359 sat 1 b 0.48 }
+	FILL{ b 1 }
+}
