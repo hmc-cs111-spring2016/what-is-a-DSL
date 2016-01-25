@@ -2,7 +2,7 @@
 _What is the name of the language? Link the name to its webpage 
 (if appropriate)._
 
-I found the DSL [BUGS](http://fisher.utstat.toronto.edu/pub/escobar/bug5/doc/manual05.ps)
+I found the DSL [BUGS.](http://fisher.utstat.toronto.edu/pub/escobar/bug5/doc/manual05.ps)
 
 # Domain
 _Describe the language's domain in five words._
