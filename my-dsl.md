@@ -12,16 +12,20 @@ Light weight framework for web development
 # Computational model
 _We don't yet have a great definition of the term "computational model". 
 For now, try to come up with the clearest, most concise explanation of 
-what happens when a ContextFree program runs._
+what happens when your DSL program runs._
 
-When a Flask program runs, it is interpreted as a Python program. 
+When a Flask program runs, it is interpreted as a Python program. The following explains how a complete web application built with Flask might execute, and also showcases the Model-View-Controller model:
+1. A user issues a request for the domain's root URL to go to the homepage. 
+2. Some URL routing mechanism will map the URL to a Python function.
+3. The Python function finds a web template which will fetch any images, CSS, etc.
+4. The rendered HTML is sent back to the URL routing mechanism, which sends it to the browser.
 
 # DSL-ness
 _Fowler writes about a spectrum of languages, from general-purpose languages to 
 "purely" domain-specific. Where does the DSL you chose fall on this spectrum, 
 and why?_ 
 
-Flask is closer to the domain-specific end of the spectrum, as it is specific to web development. 
+Flask is closer to the domain-specific end of the spectrum, as it is specific to web development. Because Flask is an intenral DSL, it contains all the programming logic of Python; however, because it was written and is used primarily for URL routing, HTML templating, and database manipulation, I think it is definitely considered more domain-specific (specific for web development) than general-purpose.
 
 # Internal or external?
 _Is the language implemented as an internal or external DSL? 
