@@ -1,0 +1,24 @@
+startshape IMAGE
+
+rule IMAGE {
+	LINE{ y 0 hue 225 sat 0.7 b 0.6}
+	LINEC{ y 1 }
+	LINE{ y 2 flip 0 hue 170 sat 0.7 b 0.6}
+	LINEC{ y 3 }
+	LINE{ y 4 hue 100 sat 0.7 b 0.6}
+	LINEC{ y 5 }
+	LINE{ y 6 flip 0 hue 10 sat 0.7 b 0.6}
+}
+
+rule LINE {
+	SQUARE { x 0 r -5 }
+	SQUARE { x 2 r 5 }
+	SQUARE {  x 4 r -5 }
+	SQUARE {  x 6 r 5 }
+}
+
+rule LINEC {
+	CIRCLE { x 1}
+	CIRCLE { x 3}
+	CIRCLE { x 5}
+}
