@@ -15,9 +15,13 @@ For now, try to come up with the clearest, most concise explanation of
 what happens when your DSL program runs._
 
 When a Flask program runs, it is interpreted as a Python program. The following explains how a complete web application built with Flask might execute, and also showcases the Model-View-Controller model:
+
 1. A user issues a request for the domain's root URL to go to the homepage. 
+
 2. Some URL routing mechanism will map the URL to a Python function.
+
 3. The Python function finds a web template which will fetch any images, CSS, etc.
+
 4. The rendered HTML is sent back to the URL routing mechanism, which sends it to the browser.
 
 # DSL-ness
