@@ -1,0 +1,16 @@
+startshape shape
+rule shape {
+shape1 { r 40 }
+}
+
+rule shape1 {
+shape2{}
+shape1{r 10 s 0.9 x 1 b .1 hue 9 sat 1}
+}
+ 
+rule shape2 {
+CIRCLE { }
+CIRCLE { s .9 b 1}
+shape2 { y 0.2 s 0.99 r 7}
+}
+	
