@@ -1,0 +1,68 @@
+startshape DRAW
+
+rule DRAW{
+HEAD{}
+}
+
+rule HEAD{
+CIRCLE {size 5}
+CIRCLE {size 4.8 h 296.57 sat 0.0248 b 1.0000}
+FACE{ size 1}
+SWIRL{ x - 2.7  r 90}
+SWIRL{ x + 2.7  r 90 flip 180}
+12 * {r 5 h 2} HAIR{y 2.9}
+12 * {r -5 h -2} HAIR{y 2.9}
+}
+
+rule FACE{
+EYE_LINE {x -1}
+EYE_LINE {x 1 flip 90}
+MOUTH {size 1.5  y -1.2}
+}
+
+rule HAIR{
+SQUARE {size .04 .8 h 257.10 sat 1.0000 b 1.0000}
+}
+
+rule EYE_GROUP {
+	EYE { x -0.5 y 0.0 s 1.0 }
+	EYE { x 0.45 y 0.8 s 0.9 }
+	EYE { x -0.4 y 1.6 s 0.8 }
+	EYE { x 0.35 y 2.4 s 0.7 }
+	EYE { x -0.3 y 3.2 s 0.6 }
+}
+
+rule EYE_LINE {
+	4 * {y 1 s .8 r -32} EYE{}
+}
+
+rule SWIRL {
+	20 * {y 1 s .8 r 40} TRIANGLE{}
+}
+
+
+
+rule EYE{
+CIRCLE {s 1.1}
+CIRCLE {h 296.57 sat 0.0248 b 1.0000}
+CIRCLE {s .5}
+}
+
+rule MOUTH{
+SQUARE {size 2 .5}
+SQUARE {size 1.9 .4 h 296.57 sat 0.0248 b 1.0000}
+TOOTH_ROW{y .1}
+TOOTH_ROW{y .1 flip 90}
+TOOTH_ROW{y -.1 r 180 x .89}
+TOOTH_ROW{y -.1 r 180 flip 90 x -.89}
+}
+
+rule TOOTH_ROW{
+10 * {x .14 size .9 y .01} TOOTH {size .1}
+}
+
+rule TOOTH{
+SQUARE {size 1.5 2.8}
+SQUARE {size 1.2 2.5 h 296.57 sat 0.0248 b 1.0000}
+
+}
