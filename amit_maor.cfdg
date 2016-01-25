@@ -1,0 +1,30 @@
+startshape MyShape 
+
+path Line1 {
+	MOVETO {x 0 y 0}
+	LINETO {x 3 y 0}
+          LINETO {x 1 y 1} 
+	STROKE {width .01}
+         FILL {hue 120 saturation 0.6 a 0.6 brightness 0.8}
+}
+
+rule Shape3 {
+	SQUARE {a -0.9}
+	Shape3 {s 0.9 r 7}
+}
+
+rule Shape2 {
+	4 * {x 1} Shape3 {r 45}
+}
+
+rule MyShape {
+     36 * {r 10 x 0.1 hue 15 } Line1 { }
+     4 * {y -.5 x -.5} Shape2 {}
+
+     CIRCLE {x -2 y 2 size 0.8}
+     TRIANGLE { y 0.55 x .05}
+     SQUARE {x 2 y -2 size 0.5}
+     SQUARE {x -2 y -2 r 80}
+     SQUARE {x 2 y 2 r 60}
+     
+}
