@@ -14,7 +14,7 @@ _We don't yet have a great definition of the term "computational model".
 For now, try to come up with the clearest, most concise explanation of 
 what happens when a ContextFree program runs._
 
-The language itself is a plain-text ASCII representation of musical notes and symbols.  Various programs exist that parse these text files and output to various formats.  [ABCJ](http://abcj.ganderband.com/), for example, is an ABC notation editor written in Java that parses ABC notation and output MIDI. 
+The language itself is a plain-text ASCII representation of musical notes and symbols.  Various programs exist that parse these text files and generate TeX commands to ultimately create a musical score. Other output types are also possible.  [ABCJ](http://abcj.ganderband.com/), for example, is an ABC notation editor written in Java that parses ABC notation and outputs MIDI. 
 
 # DSL-ness
 _Fowler writes about a spectrum of languages, from general-purpose languages to 
@@ -24,6 +24,8 @@ and why?_
 With its narrow domain and limited functionality, ABC notation is purely domain specific. 
 
 ABC notation's intended use is to notate simple, single-voice tunes, though it is possible to (awkwardly) notate more complex pieces. In terms of functionality, an ABC notation "program" is simply a text file of ASCII characters, each character representing a musical symbol (eg. a note, tempo marking, accidental, measure line, etc). There are no loops or variables, and the language is not Turing complete, meaning that it cannot be classified as a general-purpose language.
+
+An issue Fowler may have with the classification of ABC notation as a DSL, however, is that it is not purely a "computer language," which according to him is a criterion of being a DSL (top of page 32). The [Wikipedia article](https://en.wikipedia.org/wiki/ABC_notation) on ABC notation (first paragraph) suggests that an ABC notated score can be an end product in itself, fully readable and shareable, even when written on a piece of paper or a napkin.
 
 # Internal or external?
 _Is the language implemented as an internal or external DSL? 
@@ -40,7 +42,7 @@ As previously stated, ABC notation can be written in any text editor. Many progr
 _Identify one potential benefit of the DSL: how is a programmer's life or a 
 company's bottom line made easier by the existence of this language?_
 
-Combined with a parsing program, ABC notation is likely the fastest method of transcribing simple musical scores.  Notating music directly with TeX is cumbersome, and using traditional GUI-based notation programs such as Sibelius or Finale requires using the mouse and memorizing various keyboard shortcuts.  ABC notation doesn't require you to move from the keyboard and each musical symbol, for the most part, is represented by a single ASCII character (in TeX, each musical symbol requires multiple ASCII characters).  An experienced user of ABC notation can transcribe a simple score in the time it takes to type a paragraph.  [Example](http://abcnotation.com/getResource/downloads/text_/by-way-of-the-dow.abc?a=thesession.org/tunes/8649.no-ext/0001)
+Combined with a parsing program, ABC notation is likely the fastest method of transcribing simple musical scores.  Notating music directly with TeX is cumbersome, as each musical symbol requires the entering of multiple characters, and using traditional GUI-based notation programs such as Sibelius or Finale requires the combination of the mouse and various keyboard shortcuts.  ABC notation doesn't require you to move from the keyboard and each musical symbol, for the most part, is represented by a single ASCII character.  An experienced user of ABC notation can transcribe a simple score in the time it takes to type a paragraph.  [Example](http://abcnotation.com/getResource/downloads/text_/by-way-of-the-dow.abc?a=thesession.org/tunes/8649.no-ext/0001)
 
 # Drawbacks
 _Identify one potential drawback of the DSL: what does a programmer or company 
