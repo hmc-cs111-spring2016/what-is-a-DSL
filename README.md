@@ -85,19 +85,17 @@ review is on the right side of this table:
 
 | Your name   | Your critique partner's name |
 | ----------- | ---------------------------  |
-| Aaron S.    | John P.                      |
-| Amit M.     | Josh K.                      |
+| Aaron S.    | Josh K.                      |
+| Amit M.     | Daniel C.                    |
 | Andrew F.   | Josh P.                      |
-| Daniel C.   | Milo H.                      |
+| Daniel C.   | Amit M.                      |
 | Emma M.     | Rebekah J.                   |
 | Hannah Y.   | William C.                   |
-| John P.     | Aaron S.                     |
-| Josh K.     | Amit M.                      |
-| Josh P.     | Andrew F.                    |
-| Milo H.     | Daniel C.                    |
-| Rebekah J.  | Emma M.                      |
-| William C.  | Hannah Y.                    |
-
+| Josh K.     | Aaron S.                     |
+| Josh P.     | Milo H.                      |
+| Milo H.     | Andrew F.                    |
+| Rebekah J.  | Hannah Y.                    |
+| William C.  | Emma M.                      |
 
 ## Peer-review your partner's work
 Once your partner has submitted, you can comment on their work. You should find
