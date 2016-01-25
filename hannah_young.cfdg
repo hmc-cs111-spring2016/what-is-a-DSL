@@ -1,0 +1,60 @@
+startshape STUFF
+
+include i_pix.cfdg
+
+rule STUFF {
+TURN1 { y 10}
+TURN2 { y 10}
+TURN3 { y 10 }
+SQUARE {y 3.7 size 7  3.7}
+SPIRAL { y 2}
+TITLE1{ x -2.3 y 3.5}
+SQUARE { x 10 y 4 size 3  15}
+}
+
+rule TITLE1 {
+	W_5by5 { x 0 b 1 size 1}
+	H_5by5 { x 1.2 b 1}
+         Y_5by5 { x 2.4 b 1}
+
+}
+
+rule ARROW {
+     TRIANGLE { size 0.5 }
+     SQUARE { x 0 y 5 size 2 4 }
+}
+
+rule SPIRAL {
+    ARROW { size 0.5 }
+    SPIRAL { y 0.6
+         rotate -6
+         b .003
+         size 0.995 }
+}
+
+rule TURN1  {
+        MAYBE { }
+        TURN1 {x -1 y 1 size 0.7}
+        TURN1 {x 1 y -1 size 0.7 }
+}
+
+rule TURN2  {
+        MAYBE { }
+        TURN2 {x -1 y 2 size 0.7}
+        TURN2 {x 1 y -2 size 0.7 }
+}
+
+rule TURN3  {
+        MAYBE { }
+        TURN3 {x -1 y 3 size 0.7}
+        TURN3 {x 1 y -3 size 0.7 }
+}
+
+rule MAYBE 20 {
+        TRIANGLE { x 0 y 0 size 0.3 }
+}
+
+rule MAYBE 10 {
+         TRIANGLE {x 0 y 0  size 0.3 rotate -3}
+}
+
