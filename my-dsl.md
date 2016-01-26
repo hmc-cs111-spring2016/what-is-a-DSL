@@ -2,7 +2,7 @@
 _What is the name of the language? Link the name to its webpage 
 (if appropriate)._
 
-I have found a language called [TikZ](sourceforge.net/projects/pgf/). It's a syntax layer for the PGF package for LaTeX, and makes using it easier.
+I have found a language called [TikZ](https://sourceforge.net/projects/pgf/). It's a syntax layer for the PGF package for LaTeX, and makes using it easier.
 
 
 # Domain
