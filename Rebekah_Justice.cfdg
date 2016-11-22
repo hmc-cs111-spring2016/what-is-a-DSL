@@ -1,0 +1,20 @@
+startshape MULTIPLY
+background { b -1}
+
+rule MULTIPLY {
+	STAR{ x -11 y -7}
+	STAR{ x 6 y 5}
+	STAR{ x -5 y 2}
+	STAR{ x 6 y -10}
+	STAR{ x -1 y -7}
+}
+
+rule STAR {
+	CORD { }
+	STAR { y 3 r 130 s .99 b .01 }
+}
+ 
+rule CORD {
+	TRIANGLE{ } 
+	CORD { y 1 r -3 s .88 }
+}
