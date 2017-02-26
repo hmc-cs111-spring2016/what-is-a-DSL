@@ -1,0 +1,32 @@
+startshape COLORSPACE
+//A modern-arty kind of thing, a bunch of fractals of different colors meeting in the middle of the image. 
+background { b -1 }
+
+rule COLORSPACE {
+    // The 4 fractals are almost 90 degrees apart, skewed by a few degrees because it looks cool that way.
+	CIRCLE_SPIRAL { hue 225 sat 0.7 b 0.4 }
+     CIRCLE_SPIRAL { r 91 hue 130 sat .7 b .9 }
+     CIRCLE_SPIRAL { r 185  hue 3  sat .8 b .9 }
+	CIRCLE_SPIRAL { r 277  hue 70  sat .8 b .9 }
+	TRIANGLEHALO { h 270.00 sat 0.0222 b 0.9294}
+}
+
+//The fractal of circles, each one splits into 4 smaller circles in spirals of different angles. 
+rule CIRCLE_SPIRAL {
+  CIRCLE [size 2 x 5]
+CIRCLE_SPIRAL [x 1  y 3 r 25 s .5 b 1.1] 
+CIRCLE_SPIRAL [x 1  r 45 s .5 b 1.1]
+CIRCLE_SPIRAL [x 5   r 180 s .5 b -.1]
+CIRCLE_SPIRAL [x 5 y -3   r 270 s .5 b -.1]
+
+}
+
+
+// Creates the 4 triangle spirals coming out from the main circles. 
+rule TRIANGLEHALO {
+	TRIANGLE [ x 0 y 10 s .7]
+	TRIANGLE [   x 10 y 1 s .7]
+	TRIANGLE [ r 90 x -10 y -1 s .7]
+	TRIANGLE [ r 270 x 1 y -10 s .7]
+	TRIANGLEHALO [ r 10 s .95]
+}
