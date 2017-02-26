@@ -1,0 +1,46 @@
+// Apparently Context Free didn't save the latest version of my code and then crashed. This should be pretty close to what my final code was, but it may be slightly different from what I used to generate the image in my submission.
+
+startshape START
+
+rule START {
+	MAGIC {sat 1 b 0.65}
+}
+
+rule MAGIC {
+	CIRCLE {}
+	3* {r 120} MAGIC2 {size 0.5 y 0.75}
+}
+
+rule MAGIC2 {
+	CIRCLE {}
+	10* {r 36 hue 35 x 3} MAGIC3 {size 0.5 y 3}
+}
+
+rule MAGIC3 {
+	CIRCLE {}
+	3* {r 120} MAGIC4 {size 0.5 y 0.75}
+}
+
+rule MAGIC4 {
+	CIRCLE {}
+	10* {r 36 hue 35 x 3} MAGIC5 {size 0.5 y 3}
+}
+
+rule MAGIC5 {
+	CIRCLE {}
+	3* {r 120} MAGIC6 {size 0.5 y 0.75}
+}
+
+rule MAGIC6 {
+	CIRCLE {}
+	10* {r 36 hue 35 x 3} MAGIC7 {size 0.5 y 3}
+}
+
+rule MAGIC7 {
+	CIRCLE {}
+	3* {r 120} MAGIC8 {size 0.5 y 0.75}
+}
+
+rule MAGIC8 {
+	CIRCLE {}
+}
